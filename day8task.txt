@@ -1,0 +1,55 @@
+1.Write a “person” class to hold all the details.
+
+     class person {
+            name;
+            age;
+            gender;
+            number;
+            city;
+            constructor(name, age, gender, number, city) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.number = number;
+                this.city = city;
+
+            }
+             print(){
+                 return this.name + " is a "+this.age+" years old "+this.gender+" lives in "+this.city;
+             }
+
+
+        }
+        var p1 = new person("ak", "44", "male", "12345", "chennai");
+        var p2 = new person("vj", "44", "male", "54321", " banglore");
+
+        console.log(p1.print());
+        console.log(p2.print());
+
+
+2.write a class to calculate uber price.
+
+    class uber {
+            kiloMeter;
+            pricePerkm;
+            extraTime;
+            waitingCharge;
+            
+            constructor(kiloMeter, pricePerkm, extraTime, waitingCharge) {
+                this.kiloMeter = kiloMeter;
+                this.pricePerkm = pricePerkm;
+                this.extraTime = extraTime;
+                this.waitingCharge = waitingCharge;
+ 
+            }
+             print(){
+                 return (this.kiloMeter * this.pricePerkm)+(this.extraTime*this.waitingCharge);
+             }
+
+
+        }
+        var bill1 = new uber(100, 10, 0, 0);
+        var bill2 = new uber(125, 10, 15, 5);
+
+        console.log("bill:"+bill1.print());
+        console.log("bill:"+bill2.print());
